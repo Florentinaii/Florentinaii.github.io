@@ -1,0 +1,17 @@
+.navbar li a {
+    margin: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgba(32, 25, 25, 0.952);
+    font-weight: 400;
+    margin: auto;
+  }
+  
+  .navbar li a:hover {
+    color: #576e0a;
+    border-bottom: 2px solid #506312;
+  }
+
+  .navbar-brand{
+    font-size: 25px;
+  }

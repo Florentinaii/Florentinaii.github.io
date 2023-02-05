@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script href="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kontakti</title>
+   
+</head>
+
+<body style="background-color: #f6e0e4;" id="">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  container" id="FI-gusto">
+        <div class="container-fluid">
+          <h2 class="navbar-brand">Gusto<span>.</span>Cafe</h2> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Faqja kryesore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Më shumë
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="oferta_speciale.html">Ofertat speciale</a></li>
+                  <li><a class="dropdown-item" href="rreth_nesh.html">Rreth nesh</a></li>
+                  <li><a class="dropdown-item" href="kontakti.html">Kontakti</a></li>
+                  <li><a class="dropdown-item" href="lokacioni.html">Lokacioni</a></li>
+                </ul>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </nav>
+  </header>
+      
+
+   <!-----------------------------------------------------------Na kontaktoni------------------------------------------------------->
+<footer class="FI-footer" id="kontakti">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <form action="#">
+      <h3>Kontakti</h3>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Emri</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Mbiemri</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Qyteti</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Prishtina</option>
+            <option value="canada">Mitrovica</option>
+            <option value="usa">Ferizaj</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Porosia</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Porosia.." style="height:200px" required></textarea>
+          <button type="submit">Dërgo porosinë</button>
+        </div>
+      </div>
+         
+    </form>
+  </div>
+  
+</footer>
+
+<!------------------------------------------Kodi i JS------------------------------------------->
+<script>
+  function submitForm() {
+    const inputs = document.querySelectorAll('input');
+    const textArea = document.querySelector('textarea');
+    let isFormFilled = true;
+  
+    for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].value === '') {
+        isFormFilled = false;
+      }
+    }
+  
+    if (textArea.value === '') {
+      isFormFilled = false;
+    }
+  
+    if (isFormFilled) {
+      alert("Your request has been successfully received!");
+    } else {
+      alert('Please fill all the form fields');
+    }
+  }
+  
+  document.querySelector('button[type="submit"]').addEventListener('click', submitForm);
+  </script>
+
+
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+html, body {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.FI-container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+/*============ Header ===============*/
+
+.navbar li a {
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(32, 25, 25, 0.952);
+  font-weight: 400;
+  margin: auto;
+}
+
+.navbar li a:hover {
+  color: #576e0a;
+  border-bottom: 2px solid #506312;
+}
+
+/*============ Header ===============*/
+
+/*============ Menu =================*/
+.FI-container-1{
+    position: relative;
+    width: 100%;
+   
+  }
+
+.FI-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.FI-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: pink;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+.FI-container-1:hover .FI-overlay {
+    height: 100%;
+  }
+  
+.FI-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/*-=============== special menu ===================*/
+#menu .col-md-4 {
+  margin: 0;
+  padding: 0;   
+ }
+
+.FI-menu-thumb img {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+.FI-menu-thumb:hover img {
+    transform: scale(1.15);
+  }
+
+#menu .FI-menu-thumb {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 102%;
+  }
+
+.FI-menu-thumb .FI-menu-info {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: left;
+    padding: 25px 30px;
+    transition: 0.5s 0.2s;
+  }
+
+  .FI-menu-info .FI-menu-price {
+    float: right;
+  }
+
+.FI-menu-thumb .FI-menu-info h3,
+.FI-menu-thumb .FI-menu-info p,
+.FI-menu-thumb .FI-menu-info span {
+    transform: translateY(100%);
+    opacity: 0;
+    display: block;
+    transition: 0.5s 0.2s;
+    color: #ffffff;
+}
+
+.FI-menu-thumb .FI-menu-info p {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.FI-menu-thumb:hover .FI-menu-info h3,
+.FI-menu-thumb:hover .FI-menu-info p,
+.FI-menu-thumb:hover .FI-menu-info span {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+.FI-menu-thumb:hover .FI-menu-info {
+    background: rgba(0,0,0,0.8);
+  }
+
+.FI-OFERTA{
+    text-align: center;
+   
+}
+
+/*============ rreth nesh ===============*/
+.FI-section4 {
+    padding: 80px 0;
+}
+
+.FI-section4-content hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 075),
+            #a4c639);
+}
+
+/*============ rreth nesh ===============*/
+
+/*============== kontakti ===========*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+.col-25 {
+    width: 15%;
+    margin-top: 6px;
+  }
+  
+.col-75 {
+   width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+button{
+    color: #ffff;
+    background-color: #eb3656;
+    padding: 0 25px;
+    line-height: 48px;
+    box-shadow: 0 5px 16px rgba(235,54,86,.65);
+    font-size: 15px;
+}
+
+button:hover{
+    color: #eb3656;
+    background-color: #ffff;
+    box-shadow: 0 5px 16px 0 rgb(235 54 86 / 65%);
+}
+
+.FI-footer h3{
+  font-weight: 700;
+  color: #eb3656;
+  text-transform: uppercase;
+  margin: auto 15%;
+}
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  
+     
+      
+  
+  
+

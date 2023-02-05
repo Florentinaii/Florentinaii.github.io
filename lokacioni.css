@@ -1,0 +1,110 @@
+
+.navbar li a {
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(32, 25, 25, 0.952);
+    font-weight: 400;
+    margin: auto;
+  
+  }
+  
+  .navbar li a:hover {
+    color: #576e0a;
+    border-bottom: 2px solid #506312;
+  }
+
+/*================================== lokacioni ===================================*/
+
+  
+footer{
+    padding: 50px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f6e0e4;
+    
+}
+
+footer .FI-footer-part1 ul li  p{
+font-size: 15px; 
+display:inline;
+padding-left: 10px;
+color: #646464;
+}
+
+
+
+footer .FI-footer-part1 ul li  a i{
+    border: 1px;
+    background-color: #fdefe9;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: #646464;
+    box-shadow: 0 5px 21px 0 rgb(254 119 101 / 40%);
+}
+
+footer .FI-footer-part1 ul li{
+    font-size: 15px;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+    color: #646464;
+}
+
+footer h3{
+    color: #dd183c;
+    font-size: 22px;
+}
+
+footer .FI-footer-part4{
+    max-width: 250px;
+    color: #646464;
+
+}
+
+footer .FI-footer-part4 input{
+    width: 200px;
+    height: 50px;
+    padding: 0 20px;
+    border:1px solid #eb3656;
+    background-color: #ffeae1;
+    font-size: 16px;
+    position: absolute;
+}
+
+footer .FI-footer-part4 button {
+    border: 0;
+    background: 0 0;
+    position: relative;
+    color: #eb3656;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+}
+
+footer .FI-footer-part4 button i{
+    padding-top:15px;
+}
+
+#maps{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.stafi{
+    color: #eb3656;
+    font-size: 18px;
+}
+
+
