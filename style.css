@@ -111,6 +111,7 @@ html, body {
     display: block;
     transition: 0.5s 0.2s;
     color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .FI-menu-thumb .FI-menu-info p {
